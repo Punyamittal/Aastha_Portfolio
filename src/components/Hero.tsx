@@ -25,11 +25,11 @@ export const Hero = () => {
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="space-y-4">
               <h1 className="text-8xl md:text-9xl font-black text-foreground leading-none tracking-tight">
-                Your Name
+                Aastha Jain
               </h1>
               
               <div className="flex flex-wrap items-center gap-4 text-5xl md:text-7xl font-bold">
-                <span className="text-foreground">Product</span>
+                <span className="text-foreground">HR &</span>
                 <div className="flex gap-2">
                   <div className="w-16 h-16 md:w-20 md:h-20 bg-lime rounded-full animate-pulse" />
                   <div className="w-16 h-16 md:w-20 md:h-20 bg-pink rounded-full animate-pulse delay-75" />
@@ -38,14 +38,20 @@ export const Hero = () => {
               </div>
               
               <div className="text-5xl md:text-7xl font-bold text-foreground">
-                Designer
+                Talent Management
               </div>
             </div>
 
             <div className="inline-block bg-lime px-6 py-3 rounded-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-300">
               <p className="text-xl md:text-2xl font-semibold text-foreground">
-                To live is to risk it all 🚀
+                Connecting talent with opportunity 🚀
               </p>
+            </div>
+            
+            <div className="pt-4 flex items-center gap-3">
+              <span className="text-lg text-muted-foreground">Mentor @ Bhav IGDTUW</span>
+              <span className="text-2xl">•</span>
+              <span className="text-lg text-muted-foreground">MUN Enthusiast</span>
             </div>
           </div>
         </div>

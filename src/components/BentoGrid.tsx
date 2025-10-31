@@ -10,7 +10,7 @@ export const BentoGrid = () => {
     {
       id: "about",
       title: "About Me",
-      description: "I craft delightful designs that make users say 🤩. Outside of design, I explore creativity in unexpected places.",
+      description: "HR professional passionate about talent management and building meaningful connections. I thrive in dynamic environments and love bringing people and opportunities together.",
       className: "md:col-span-2 bg-card hover:bg-lime/10",
       delay: "0ms"
     },
@@ -29,23 +29,23 @@ export const BentoGrid = () => {
       delay: "200ms"
     },
     {
-      id: "experience",
-      title: "5+ Years",
-      description: "of crafting beautiful digital experiences",
-      className: "bg-lime/20 hover:bg-lime/30",
+      id: "achievements",
+      title: "Leadership Roles",
+      description: "President @ Griffin Ventures MUN • Secretary General @ Nakshatra MUN • Chief Coordinator @ PPS Intra MUN",
+      className: "md:col-span-2 bg-lime/20 hover:bg-lime/30",
       delay: "300ms"
     },
     {
       id: "skills",
-      title: "Skills",
-      description: "UI/UX Design • Product Strategy • Prototyping • Design Systems • User Research",
+      title: "Core Skills",
+      description: "Recruitment • Candidate Management • Documentation • Internal Communications • Employee Engagement • Talent Relations",
       className: "md:col-span-2 bg-card hover:bg-secondary/10",
       delay: "400ms"
     },
     {
       id: "passion",
-      title: "Design Philosophy",
-      description: "Every pixel tells a story. Every interaction creates an emotion. Let's make magic together ✨",
+      title: "My Approach",
+      description: "Building bridges between talent and opportunity. Every connection matters, every person has a story. Let's create impact together! ✨",
       className: "md:col-span-2 bg-accent/20 hover:bg-accent/30",
       delay: "500ms"
     }
