@@ -23,7 +23,7 @@ export const BentoGrid = () => {
       id: "workspace",
       title: "",
       description: '"Great vision without great people is irrelevant." — Jim Collins',
-      className: "bg-coral/20 hover:bg-coral/30 md:col-span-2",
+      className: "bg-coral/20 hover:bg-coral/30 md:col-span-1",
       delay: "200ms"
     },
     {
@@ -93,12 +93,12 @@ export const BentoGrid = () => {
                   )}
                 </div>
               ) : (
-                <div className="space-y-3 sm:space-y-4 h-full flex flex-col justify-center min-h-[150px] sm:min-h-[200px]">
+                <div className={`space-y-3 sm:space-y-4 h-full flex flex-col justify-center ${card.id === "workspace" ? "min-h-[200px] sm:min-h-[250px] md:min-h-[300px]" : "min-h-[150px] sm:min-h-[200px]"}`}>
                   <h3 className={`font-bold text-foreground group-hover:scale-105 transition-transform ${card.id === "about" ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl" : "text-2xl sm:text-3xl"}`}>
                     {card.title}
                   </h3>
                   {card.description && (
-                    <p className={`text-muted-foreground leading-relaxed ${card.id === "about" ? "text-base sm:text-lg md:text-xl lg:text-2xl" : "text-sm sm:text-base md:text-lg"}`}>
+                    <p className={`leading-relaxed ${card.id === "about" ? "text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground" : card.id === "workspace" ? "text-base sm:text-lg md:text-xl lg:text-2xl text-center italic font-bold text-foreground" : "text-sm sm:text-base md:text-lg text-muted-foreground"}`}>
                       {card.description}
                     </p>
                   )}
