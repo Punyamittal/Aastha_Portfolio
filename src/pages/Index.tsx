@@ -5,18 +5,22 @@ import { Projects } from "@/components/Projects";
 import { BentoGrid } from "@/components/BentoGrid";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { Loader } from "@/components/Loader";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <Hero />
-      <StackedScroll />
-      <Projects />
-      <BentoGrid />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <Loader />
+      <div className="min-h-screen bg-background">
+        <Header />
+        <Hero />
+        <StackedScroll />
+        <Projects />
+        <BentoGrid />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 };
 

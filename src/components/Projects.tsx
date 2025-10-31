@@ -27,33 +27,33 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-6">
-        <h2 className="text-5xl md:text-6xl font-black text-foreground mb-12 text-center">
+    <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-8 sm:mb-12 text-center px-4">
           Experience ⚡
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className={`${project.color} p-8 rounded-3xl border-2 border-border hover:border-foreground transition-all duration-300 hover:-translate-y-2 cursor-pointer group`}
+              className={`${project.color} p-6 sm:p-8 rounded-2xl sm:rounded-3xl border-2 border-border hover:border-foreground transition-all duration-300 hover:-translate-y-2 cursor-pointer group`}
             >
-              <div className="space-y-4">
-                <div className="flex justify-between items-start gap-4">
-                  <h3 className="text-2xl font-bold text-foreground group-hover:text-secondary transition-colors">
+              <div className="space-y-3 sm:space-y-4">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground transition-colors">
                     {project.title}
                   </h3>
-                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                  <span className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">
                     {project.duration}
                   </span>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 pt-4">
+                <div className="flex flex-wrap gap-2 pt-2 sm:pt-4">
                   {project.tags.map((tag, i) => (
-                    <Badge key={i} variant="secondary" className="rounded-full">
+                    <Badge key={i} variant="secondary" className="rounded-full text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-1.5">
                       {tag}
                     </Badge>
                   ))}
