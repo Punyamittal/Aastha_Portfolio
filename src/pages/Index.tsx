@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { StackedScroll } from "@/components/StackedScroll";
 import { Projects } from "@/components/Projects";
 import { BentoGrid } from "@/components/BentoGrid";
 import { Contact } from "@/components/Contact";
@@ -10,6 +11,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <StackedScroll />
       <Projects />
       <BentoGrid />
       <Contact />
