@@ -20,7 +20,7 @@ const cards: StackedCard[] = [
     subtitle: "Indian Youth Diplomacy Forum",
     description: "Coordinating recruitment pipelines, managing candidate communications, and maintaining critical HR documentation. Building the foundation of organizational talent management.",
     tags: ["Recruitment", "Documentation", "Employee Engagement"],
-    bgColor: "bg-background",
+    bgColor: "bg-[hsl(var(--beige))]",
     textColor: "text-foreground",
   },
   {
@@ -29,7 +29,7 @@ const cards: StackedCard[] = [
     subtitle: "Creators Nest",
     description: "Managing creator relationships, facilitating brand collaborations, and connecting talent with meaningful opportunities. Bridging the gap between creativity and commerce.",
     tags: ["Creator Economy", "Brand Partnerships", "Talent Relations"],
-    bgColor: "bg-gradient-to-br from-pink/20 to-coral/20",
+    bgColor: "bg-[#FFE5EC]",
     textColor: "text-foreground",
   },
   {
@@ -38,7 +38,7 @@ const cards: StackedCard[] = [
     subtitle: "Commonwealth Student Association",
     description: "Leading public relations initiatives for Anika Joshi's campaign. Crafting narratives, managing communications, and building authentic connections with stakeholders.",
     tags: ["Public Relations", "Campaign Management", "Strategic Communications"],
-    bgColor: "bg-gradient-to-br from-lime/20 to-secondary/30",
+    bgColor: "bg-[#E8F5E0]",
     textColor: "text-foreground",
   },
   {
@@ -47,7 +47,7 @@ const cards: StackedCard[] = [
     subtitle: "MUN & Community Building",
     description: "President at Griffin Ventures MUN, Secretary General at Nakshatra MUN, and Mentor at Bhav IGDTUW. Empowering others while honing leadership through diplomacy and debate.",
     tags: ["Leadership", "Mentorship", "Public Speaking"],
-    bgColor: "bg-gradient-to-br from-accent/20 to-pink/10",
+    bgColor: "bg-[#FFF5F0]",
     textColor: "text-foreground",
   },
 ];
@@ -79,7 +79,7 @@ const Card = ({ card, index }: { card: StackedCard; index: number }) => {
         opacity,
         top: `${index * 2}rem`,
       }}
-      className={`sticky h-screen flex items-center justify-center ${card.bgColor} border-b-4 border-border`}
+      className={`sticky h-screen flex items-center justify-center ${card.bgColor} border-b-4 border-border relative z-10`}
     >
       <div className="container mx-auto px-6">
         <motion.div
