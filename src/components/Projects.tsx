@@ -41,7 +41,7 @@ export const Projects = () => {
             >
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
-                  <h3 className="text-xl sm:text-2xl font-bold text-foreground transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold text-black transition-colors">
                     {project.title}
                   </h3>
                   <span className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">

@@ -121,7 +121,7 @@ const Card = ({ card, index }: { card: StackedCard; index: number }) => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-xl sm:text-2xl md:text-3xl font-semibold text-secondary px-4"
+            className="text-xl sm:text-2xl md:text-3xl font-semibold text-black px-4"
           >
             {card.subtitle}
           </motion.p>
